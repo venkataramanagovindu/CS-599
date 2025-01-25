@@ -1,5 +1,5 @@
 /* 
-Problem Submission Link: [Insert your submission url from leetcode, GFG, codeforces]
+Problem Submission Link: https://leetcode.com/playground/ZZK8ACMc
 
 Explain your approach in 3-5 steps:
     1. As given in the starter code, I'm using the Arrya DS to implement a stack
@@ -16,10 +16,10 @@ Any problem you faced while coding this:
     Example: Initially not 
 
 Time Complexity (in terms of N):
-   
+   The time complexity for the push and pop operations is O(1) as we are using the array push and pop methods
 
 Space Complexity (in terms of N):
-    Example: O(N) - The space used for storing the pairs (values and indices) in `newArr` is O(N).
+    The space complexity is O(N) as we are using the array to store the elements and the top variable to keep track of the latest element
 
  */
 
@@ -37,11 +37,15 @@ class Stack {
         this.a = new Array(this.MAX);
     }
 
+    // time complexity: O(1)
+    // space complexity: O(1)
     isEmpty() {
         //Write your code here
         return this.a == -1;
     }
 
+    // time complexity: O(1)
+    // space complexity: O(1)
     push(x) {
         //Check for stack Overflow
         //Write your code here
@@ -52,6 +56,8 @@ class Stack {
         return true
     }
 
+    // time complexity: O(1)
+    // space complexity: O(1)
     pop() {
         //If empty return 0 and print " Stack Underflow"
         //Write your code here
@@ -67,6 +73,8 @@ class Stack {
             }
     }
 
+    // time complexity: O(1)
+    // space complexity: O(1)
      peek() {
        //Write your code here
        if(this.isEmpty())
